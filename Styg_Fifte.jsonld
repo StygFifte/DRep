@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Styg_Fifte"
+    },
+    "motivations": {
+      "@value": "- I want to bring strong understanding of the risks and opportunities of constitutional governance.\n- I want to apply my experience across multiple programming languages, protocols and institutions (Princeton Constitutional Law, International Open Standards, Heavy Industry Systems Engineering) to critical technical assessment of Cardano governance actions and the process of 1694 governance.\n- I want to see this experiment iterated and moved forward on the strongest evidence, the best research, the most merit and the most virtuous human action."
+    },
+    "objectives": {
+      "@value": "- Decentralization and maximal distribution of the network and protocal\n- Constitutional Fidelity\n- Guarding against well known Constitutional risks, such as Judicial Review, and decay of separation of powers\n- Pluralism and Polyglot technology\n- Evidence based assessment of governance actions\n- Good for Humans, good for Humanity\n"
+    },
+    "paymentAddress": {
+      "@value": "addr1qxezc7l4nshvfcg5awye898lcms08em4g43zal849576cn8w0pj29fm8n7cau7fp3gkvkhyk584h8k2pxwdxgzudpvjqdusmaa"
+    },
+    "qualifications": {
+      "@value": "- Independence=Primary orientation is to reality, not to others\n- Integrity=Fidelity of actions to rational convictions and values\n- Honesty=Refusal to fake reality\n- Justice=Rational, non-emotional judgment, preservation of the good\n- Productivity=Creation of material values, whether goods or services\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X/Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/styg50"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X/Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/styg50"
+        }
+      }
+    ]
+  }
+}
